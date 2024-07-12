@@ -1,0 +1,187 @@
+/* ------------------------------- global ------------------------------- */
+
+/* -------------------- body -------------------- */
+
+.global__body{
+	margin: 0px;
+	padding: 0px;
+
+	display: grid;
+	grid-template-areas: 'header header'
+						 'main   aside';
+	grid-template-columns: 1fr auto;
+	grid-template-rows: auto 1fr;
+
+	height: 100vh;
+
+	font-family: Arial;
+
+	background-color: #b3b3b3;
+}
+
+/* -------------------- header -------------------- */
+
+.global__header{
+	grid-area: header;
+
+	display: grid;
+	grid-template-areas: 'logo actions';
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: auto;
+
+	background-color: #d2d2d2;
+	border-bottom: 1px solid #2c2c2c;
+}
+.global__header-logo{
+	grid-area: logo;
+
+	margin: 0px;
+	margin: 5px;
+
+	text-align: center;
+	font-size: 1.7em;
+	font-family: Comfortaa;
+}
+.global__header-actions{
+	grid-area: actions;
+}
+
+/* -------------------- main -------------------- */
+
+.global__main{
+	grid-area: main;
+}
+.global__main-canvas{
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 43px);
+}
+
+/* -------------------- scripts layers -------------------- */
+
+#script__canvas-paint-1{
+	z-index: 6;
+}
+#script__canvas-paint-2{
+	z-index: 5;
+}
+#script__canvas-paint-3{
+	z-index: 4;
+}
+#script__canvas-paint-4{
+	z-index: 3;
+}
+#script__canvas-paint-5{
+	z-index: 2;
+}
+#script__canvas-background{
+	z-index: 1;
+}
+
+/* -------------------- scripts elements -------------------- */
+
+#f1_inp2{
+	width: 50px;
+}
+
+/* -------------------- scripts modals -------------------- */
+
+#script__modal-import textarea{
+	min-width: calc(100% - 6px);
+	width: calc(100% - 6px);
+	max-width: calc(100% - 6px);
+}
+
+#script__modal-export .modal__content{
+	height: 400px;
+	overflow-y: auto;
+}
+
+/* -------------------- aside -------------------- */
+
+.global__aside{
+	grid-area: aside;
+
+	padding: 10px;
+
+	z-index: 15;
+
+	background-color: #d2d2d2;
+	border-left: 1px solid #2c2c2c;
+}
+.global__aside-title{
+	margin: 10px;
+
+	text-align: center;
+	font-size: 1.5em;
+	font-family: Comfortaa;
+}
+.global__aside-buttons{
+	margin: 10px;
+	text-align: right;
+}
+
+/* -------------------- aside settings -------------------- */
+
+.global__aside-settings{
+	border-bottom: 1px dashed #888888;
+}
+.global__aside-settings-content{
+
+}
+
+/* -------------------- aside layers -------------------- */
+
+.global__aside-layers{
+	border-bottom: 1px dashed #888888;
+}
+.global__aside-layers-content-layer{
+	padding: 0px 5px;
+	margin: 6px 0px;
+
+	border: 1px solid #888888;
+}
+.global__aside-layers-content-layer-top{
+	font-weight: bold;
+
+	border: 2px solid #000000;
+	background-color: #e2e2e2;
+}
+.global__aside-layers-content-background{
+	padding: 5px;
+	margin: 6px 0px;
+
+	border: 1px solid #000000;
+}
+
+/* -------------------- aside colors -------------------- */
+
+.global__aside-colors{
+	
+}
+.global__aside-colors-content{
+	width: 250px;
+
+	padding-bottom: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	border-bottom: 1px dashed #888888;
+}
+.global__aside-colors-content-user{
+	width: 250px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.global__aside-colors-content-color{
+	margin: 2px;
+
+	width: 40px;
+	height: 20px;
+
+	border: 2px solid #ffffff;
+}
