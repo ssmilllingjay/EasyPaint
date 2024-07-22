@@ -396,3 +396,21 @@ $('#script__button-export').click(function() { export_data() })
 function export_data() {
 	$('#script__data_export').text(get_ls('coordsLS'))
 }
+v
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+v
+v
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+v
